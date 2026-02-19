@@ -1,3 +1,9 @@
+#Bailey Evan Reese
+#PantherID: 002675242
+#2/19/2026
+#Computer Architecture - Task 1 - Data Systems
+
+
 #decimal to binary logic
 def decimalToBinary(decimal):
     #if the given decimal number is 0, return "0"
