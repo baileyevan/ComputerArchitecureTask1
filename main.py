@@ -17,6 +17,7 @@ def main():
         conversionType = input("Enter conversion type (DEC/BIN/HEX) or Q to quit: ").upper()
         if conversionType == "Q":
             break
+        
         while conversionType not in ["DEC", "BIN", "HEX"]:
             conversionType = input("Invalid conversion type, Enter (DEC/BIN/HEX) or q to quit: ").upper()
             if conversionType == "Q":

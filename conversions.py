@@ -38,6 +38,25 @@ def binaryToHexadecimal(binary):
     #iterate through the binary string in chunks of 4, converting each chunk to its corresponding hexadecimal digit and appending it to the hexadecimal string
     for i in range(0, len(binary), 4):
         chunk = binary[i:i+4]
-        hexadecimal += hex(int(chunk, 2))[2:].upper()
+        hexadecimal += hexMap[chunk]
     return hexadecimal
     
+#hexadecimal map for mapping binary chunks of 4 to their corresponding hexadecimal digits
+hexMap = {
+    "0000": "0",
+    "0001": "1",
+    "0010": "2",
+    "0011": "3",
+    "0100": "4",
+    "0101": "5",
+    "0110": "6",
+    "0111": "7",
+    "1000": "8",
+    "1001": "9",
+    "1010": "A",
+    "1011": "B",
+    "1100": "C",
+    "1101": "D",
+    "1110": "E",
+    "1111": "F"
+}
